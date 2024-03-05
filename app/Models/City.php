@@ -12,7 +12,7 @@ class City extends Model
     protected $fillable=[
         'nume',
         'populatie',
-        'tara',
+        'country_id',
         'zona_geografica'
     ];
 }
