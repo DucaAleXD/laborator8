@@ -17,7 +17,7 @@ class CityController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
+     * Incarcarea formularului
      */
     public function create()
     {
@@ -41,6 +41,7 @@ class CityController extends Controller
     public function show(City $city)
     {
         //
+        return $city;
     }
 
     /**
