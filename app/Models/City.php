@@ -17,6 +17,6 @@ class City extends Model
         'zona_geografica'
     ];
     public function country():BelongsTo{
-
+        return $this->belongsTo(Country::class);
     }
 }
