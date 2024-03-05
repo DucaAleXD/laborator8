@@ -73,5 +73,8 @@ class CityController extends Controller
     public function destroy(City $city)
     {
         //
+        $city->delete();
+        return response()->json(['message','Oras sters cu succes']);
+
     }
 }
