@@ -40,7 +40,7 @@ class CityController extends Controller
      */
     public function show(City $city)
     {
-        //
+        //afisare dupa id pentru isomnia 1,2,3...
         return $city;
     }
 
@@ -58,6 +58,13 @@ class CityController extends Controller
     public function update(Request $request, City $city)
     {
         //
+        $city->nume=$request->nume;
+        $city->populatie=$request->populatie;
+        $city->country_id=$request->country_id;
+        $city->zona_geografica=$request->zona_geografica;
+        $city->save();
+        return response()->json($city,201);
+
     }
 
     /**
